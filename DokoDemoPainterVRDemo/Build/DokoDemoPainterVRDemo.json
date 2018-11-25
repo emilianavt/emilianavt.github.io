@@ -1,0 +1,12 @@
+{
+"companyName": "Emiliana_vt",
+"productName": "DokoDemoPainter WebVR Demo (Based on Mozilla's Unity WebVR demo Sunny Desert)",
+"dataUrl": "DokoDemoPainterVRDemo.data.unityweb",
+"wasmCodeUrl": "DokoDemoPainterVRDemo.wasm.code.unityweb",
+"wasmFrameworkUrl": "DokoDemoPainterVRDemo.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}

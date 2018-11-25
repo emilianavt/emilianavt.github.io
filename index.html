@@ -1,0 +1,100 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Emiliana's dev log</title>
+<link rel="stylesheet" href="main.css" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+<div class="header-title">
+<h1 id="emilianasdevlog">Emiliana's dev log</h1>
+</div>
+</header>
+
+<div class="list">
+
+<div class="list-post">
+<div class="list-post-title"><h4 id="contact">About</h4></div>
+<div class="list-post-desc">
+<p><a href="contact.html">Contact information</a></p>
+</div></div>
+<hr>
+
+<div class="list-post">
+<div class="list-post-title"><h2 id="bvhtoolsreleased">BVH Tools released on the asset store</h2></div>
+<div class="list-post-desc">
+<p>My <a href="https://github.com/emilianavt/BVHTools">BVH Tools</a> package is now available on the <a href="https://assetstore.unity.com/packages/tools/animation/bvh-tools-144728">Unity asset store</a> for free too!</p>
+<p>BVH Tools let you record and export motion data from avatars or skeletons to BVH files so they can be edited with Blender or other programs. The included animation loading component makes it possible import BVH files into Unity at runtime.</p>
+<p>All components can be easily used from the editor with helpful tooltips for all fields and buttons to perform all necessary functions. Both the motion capture and animation loader components can be used from other scripts through a simple API, is documented in the readme file.</p>
+<p>Animation import is efficient. For example, according to the Unity profiler, loading a 1.4 MB BVH file with slightly above 80 bones and 582 frames took slightly over 100ms during tests. Another file of almost 1.1 MB with 23 bones and 1522 frames took less than 75ms to load. A part of the loading process uses no Unity APIs, so it can be offloaded to a separate thread.</p>
+<p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/DM7UZuAgBJk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+</div></div>
+
+<hr>
+<div class="list-post">
+<div class="list-post-title"><h2 id="dokodemopainterreleased">First asset store release</h2></div>
+<div class="list-post-desc">
+<p>My DokoDemoPainter package got approved on the Unity asset store today!</p>
+<p>You can now easily download it from <a href="https://assetstore.unity.com/packages/tools/particles-effects/dokodemopainter-134335">there</a> as well as from GitHub!</p>
+</div></div>
+
+<hr>
+<div class="list-post">
+<div class="list-post-title"><h2 id="dokodemopainterreleased">DokoDemoPainter released</h2></div>
+<div class="list-post-desc">
+<p>You can now find my realtime texture painting package for Unity on <a href="https://github.com/emilianavt/DokoDemoPainter">GitHub</a>.</p>
+<p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/tkvJehL9uNo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/p05IaE6S7ZE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p>It can paint on both regular mesh and skinned mesh. It detects objects to paint on using a camera and a special shader. Painting itself is also done using pixel shaders.</p>
+<p>You can try out a very simple live demo <a href="https://emilianavt.github.io/DokoDemoPainterDemo/">here</a>. A demo using WebVR can be found <a href="https://emilianavt.github.io/DokoDemoPainterVRDemo/">here</a>. The WebVR demo is based on Mozilla's Sunny Desert demo.</p>
+</div></div>
+<hr>
+
+<div class="list-post">
+<div class="list-post-title"><h2 id="vrmformat">VRM format</h2></div>
+<p>VRM is a format for 3D avatars. It's gaining more traction lately and the <a href="https://github.com/dwango/UniVRM">library</a> allows run time importing of VRM models in Unity.</p>
+<p>If you're interested in how to convert a model to VRM format, I wrote a short <a href="https://gist.github.com/emilianavt/51d8399987d67544fdebfe2ebd9a5149">overview</a> of the process.</p>
+</div>
+<hr>
+
+<div class="list-post">
+<div class="list-post-title"><h2 id="aquicklooknvidiaflex">A quick look: NVIDIA Flex</h2></div>
+<div class="list-post-desc">
+<p>I've been fiddling around with <a href="https://assetstore.unity.com/packages/tools/physics/nvidia-flex-for-unity-1-0-beta-120425">NVIDIA Flex</a> recently. It allows particle based physics simulations with liquids and soft meshes.</p>
+<p><blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I&#39;m not trying to drown them at all! 🙄 I even made them float after all! 😊 <a href="https://t.co/6W6AogMdGS">pic.twitter.com/6W6AogMdGS</a></p>&mdash; Emiliana (@emiliana_vt) <a href="https://twitter.com/emiliana_vt/status/1038412687942803456?ref_src=twsrc%5Etfw">September 8, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+<p><blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Pushing around a dummy plushy with nvidia flex. 😈 The mesh isn&#39;t rigged. It was turned into a soft body with flex&#39;s particle simulation. Getting the settings right so it behaves nicely was a bit tricky. 😓 Too bad a second instance added to the running scene won&#39;t move. 😨 <a href="https://t.co/9SU3upZL3p">pic.twitter.com/9SU3upZL3p</a></p>&mdash; Emiliana (@emiliana_vt) <a href="https://twitter.com/emiliana_vt/status/1038209132283789312?ref_src=twsrc%5Etfw">September 7, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+</div></div>
+<hr>
+
+<div class="list-post">
+<div class="list-post-title"><h2 id="wipfacetrackinginunity">WIP: Face tracking in Unity</h2></div>
+<div class="list-post-desc">
+<p><blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Face tracking Facerig output directly in Unity using OpenFace. Faces! ☺️ <a href="https://t.co/WTroAsDCTA">pic.twitter.com/WTroAsDCTA</a></p>&mdash; Emiliana (@emiliana_vt) <a href="https://twitter.com/emiliana_vt/status/1000758218119933953?ref_src=twsrc%5Etfw">May 27, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+<p>I've implemented a wrapper for OpenFace to do face tracking in Unity. There are still some issues. It's pretty slow.</p>
+<p>I'll have to take a look at some other tracking solutions. <a href="https://github.com/wywu/LAB">LAB</a> also looks interesting.</p>
+</div></div>
+<hr>
+
+<div class="list-post">
+<div class="list-post-title"><h2 id="wipfacetrackinginunity">Reassigning meshes to armatures</h2></div>
+<div class="list-post-desc">
+<p>While working, I sometimes found myself wanting to attach a fresh mesh to an existing armature in Unity, because it already had a lot of components attached to various bones.</p>
+<p>I found a script to do this on Unity <a href="https://answers.unity.com/questions/1442963/how-to-re-apply-a-mesh-to-an-armature.html">answers</a>, but it was still a little buggy.</p>
+<p>After cleaning it up a bit, it works pretty well. You can find my version <a href="https://gist.github.com/emilianavt/721cd4dd2d4a62ba54b002b63f894dbf">here</a>.</p>
+<p>Attach it to the new mesh, set the target armature and root bone and press the checkbox. It might take a while to run.</p>
+</div></div>
+<hr>
+
+</div>
+</body>
+</html>
